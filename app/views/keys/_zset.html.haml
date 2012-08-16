@@ -1,0 +1,7 @@
+%a{ :class => 'expand', :href => '#'} expand
+.to-expand
+  %ul.unstyled
+    - zset.each do |key, score|
+      %li
+	%strong #{key} :
+	= score

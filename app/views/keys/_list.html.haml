@@ -1,0 +1,7 @@
+%a{ :class => 'expand', :href => '#'} expand
+.to-expand
+  %ul.unstyled
+    - list.each_with_index do |item, index|
+      %li
+	%strong [ #{index} ] :
+	= item

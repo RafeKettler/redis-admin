@@ -1,0 +1,4 @@
+# Sample redis config file
+development:
+  host: localhost
+  port: 6379

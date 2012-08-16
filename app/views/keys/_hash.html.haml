@@ -1,0 +1,7 @@
+%a{ :class => 'expand', :href => '#'} expand
+.to-expand
+  %ul.unstyled
+    - hash.each do |key, value|
+      %li
+	%strong #{key} :
+	= value

@@ -1,0 +1,13 @@
+%table
+  %thead
+    %tr
+      %th Key
+      %th Type
+      %th Value
+  %tbody
+    - @keys.each do |key|
+      %tr
+        %td= key.name
+        %td= key.type
+        %td= render_key key
+= will_paginate @keys, :renderer => BootstrapPagination::Rails
